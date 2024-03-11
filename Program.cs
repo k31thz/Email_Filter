@@ -21,8 +21,8 @@ namespace Email_Filter
         static void Main(string[] args)
         {
             // Read the Json files
-            string classifiedStringsList = File.ReadAllText("C:/Users/Jace/Source/Repos/Email_Filter/classifiedStrings.json");
-            string emailContents = File.ReadAllText("C:/Users/Jace/Source/Repos/Email_Filter/emailContents.json");
+            string classifiedStringsList = File.ReadAllText("..\\..\\..\\classifiedStrings.json");
+            string emailContents = File.ReadAllText("..\\..\\..\\emailContents.json");
 
             //Deserialize the classified words file
             EmailFilter emailFilter = JsonSerializer.Deserialize<EmailFilter>(classifiedStringsList);
